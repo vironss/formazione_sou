@@ -16,7 +16,7 @@ Con un if effettuo un confronto tra le due versioni e restituisco TRUE se sono d
 current=$(uname -r)
 latest=$(rpm -q kernel|sort -V|tail -n 1|awk -F'l-' '{print $2}')
 
-if [[ "$current" = "$latest" ]];then
+if [[ "$current" == "$latest" ]];then
 echo "TRUE"
 else
 echo "FALSE"
