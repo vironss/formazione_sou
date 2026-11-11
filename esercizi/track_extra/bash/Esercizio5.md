@@ -8,7 +8,7 @@ if [[ $# != 1 ]]; then
 	exit 1
 fi
 
-if [[ $1 =~ ^[1-9]*$ ]]; then
+if [[ $1 =~ ^[1-9][0-9]*$ ]]; then
 	for ((i=1; i<$1+1; i++)); do
 		if ((i%2==0)); then
 			echo "$i:pari"
@@ -17,6 +17,6 @@ if [[ $1 =~ ^[1-9]*$ ]]; then
 		fi
 	done
 else
-	echo "Accetta solo valori numerici"
+	echo "Accetta solo valori numerici positivi che non iniziano per 0"
 fi
 ```
