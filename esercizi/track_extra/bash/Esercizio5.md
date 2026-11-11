@@ -18,5 +18,6 @@ if [[ $1 =~ ^[1-9][0-9]*$ ]]; then
 	done
 else
 	echo "Accetta solo valori numerici positivi che non iniziano per 0"
+	exit 2
 fi
 ```
