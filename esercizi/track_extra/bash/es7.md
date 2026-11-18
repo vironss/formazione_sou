@@ -45,7 +45,7 @@ $ cat -n es7_2.txt 
 ```
 
 ```sh
-$ sed -i -E '/^#.*/d' es7_2.txt 
+$ sed -i -E '/^#/d' es7_2.txt 
 $ cat es7_2.txt
     1 testo testo 
     2 commento dietro testo 
