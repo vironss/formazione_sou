@@ -1,0 +1,1 @@
+**IPV4 REGEX**: Scrivere una o piu' espressioni regolari (in OR) che matchino tutti i possibili indirizzi ipv4 in decimal dottet notation.
